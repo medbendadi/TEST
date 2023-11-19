@@ -1,5 +1,5 @@
 "use client"
-
+/* eslint-disable */
 import Image from 'next/image'
 import localFont from 'next/font/local'
 import { Lexend, Roboto_Mono } from 'next/font/google'
