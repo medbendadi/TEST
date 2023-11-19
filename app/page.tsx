@@ -269,6 +269,7 @@ export default function Home() {
             {
               users.map((user, index) => (
                 <motion.div
+                key={index}
                 initial={{ x:50, opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: 1 ,delay: 0.2 * index+1 }, x:0 }}
                   className={`relative`}>
                   <div onClick={() => {
