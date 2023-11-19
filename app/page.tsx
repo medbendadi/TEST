@@ -124,7 +124,7 @@ export default function Home() {
           <div className='md:w-1/2 w-full h-full relative overflow-hidden shadow-box'>
             {
               [...bubbles, ...bubbles, ...bubbles].map((bubble, index) => (
-                <Bubble index={index} src={bubble.src} />
+                <Bubble key={index} src={bubble.src} />
               ))
             }
             <motion.img

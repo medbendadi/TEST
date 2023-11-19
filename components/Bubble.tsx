@@ -3,10 +3,10 @@ import React from 'react';
 
 interface BubbleProps {
    src: string;
-   index: number;
+   key: number;
 }
 
-const Bubble: React.FC<BubbleProps> = ({ src, index }) => {
+const Bubble: React.FC<BubbleProps> = ({ src, key }) => {
   const getRandomValue = (min: number, max: number): number =>
     Math.random() * (max - min) + min;
 
@@ -18,10 +18,10 @@ const Bubble: React.FC<BubbleProps> = ({ src, index }) => {
 
    return (
       <Image
-         key={index}
+         key={key}
          className='absolute bubble pointer-events-none'
          src={src}
-         alt={`Bubble ${index + 1}`}
+         alt={`Bubble ${key + 1}`}
          width={60}
          height={60}
          objectFit='contain'
