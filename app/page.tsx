@@ -98,7 +98,7 @@ export default function Home() {
         <Link href='/' >
           <Image
             className='pointer-events-none'
-            src="/logo.svg"
+            src="/Logo.svg"
             alt="Logo"
             width={56}
             height={56}
