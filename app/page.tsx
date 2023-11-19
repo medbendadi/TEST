@@ -214,7 +214,7 @@ export default function Home() {
       <section id='content' className='w-[90%] mx-auto min-h-screen relative'>
         <div className='mb-[8vh]'>
         <Image
-          className='absolute left-[-7%] top-0 pointer-events-none'
+          className='absolute z-[-1] left-[-7%] top-0 pointer-events-none'
           src="/bubble2-1.svg"
           alt="Animate Frame"
           width={90}
@@ -222,7 +222,7 @@ export default function Home() {
           objectFit='contain'
         />
         <Image
-          className='absolute left-0 top-[20%] pointer-events-none'
+          className='absolute z-[-1] left-0 top-[20%] pointer-events-none'
           src="/bubble2-2.svg"
           alt="Animate Frame"
           width={73}
