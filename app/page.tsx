@@ -190,8 +190,12 @@ export default function Home() {
           </div>
         </div>
         <Link href='/#content' onClick={(e) => {
-            e.preventDefault();
-            document.getElementById("content").scrollIntoView({ behavior: "smooth" });
+          e.preventDefault();
+          const contentElement = document.getElementById("content");
+    if (contentElement) {
+        contentElement.scrollIntoView({ behavior: "smooth" });
+    }
+            // document.getElementById("content").scrollIntoView({ behavior: "smooth" });
         }}
           className='scrolldown absolute bottom-[10px] left-1/2 -translate-x-1/2 flex flex-col items-center justify-center'>
           <p className='text-gradient text-[.85rem]'>Scroll Down</p>
