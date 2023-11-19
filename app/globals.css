@@ -24,4 +24,86 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
+    scroll-behavior:smooth;
+}
+
+
+.button {
+  /* left: 6px; */
+
+  border: 2px solid transparent;
+  background: linear-gradient(0deg, #080808, #080808) padding-box,
+linear-gradient(to left, rgba(52, 52, 52, 0.5), rgba(52, 52, 52, 0.5)) border-box,
+linear-gradient(93.23deg, #868686 -1.74%, rgba(0, 0, 0, 0) 78.61%) border-box;
+}
+.button > p{
+  background: linear-gradient(90deg, #ABABAB 0%, #2D2D2D 102.73%),
+linear-gradient(88.95deg, rgba(255, 255, 255, 0) 80.46%, #FFFFFF 112.56%);
+  color: transparent;
+  background-clip: text;
+}
+.button.reverse > p{
+  background: linear-gradient(90deg, #2D2D2D 0%,#ABABAB 102.73%),
+linear-gradient(88.95deg, #FFFFFF 80.46%, rgba(255, 255, 255, 0) 112.56%);
+  color: transparent;
+  background-clip: text;
+}
+.text-gradient {
+  background: radial-gradient(circle at center, #EB3A4A, #2B2B2B);
+  color: transparent;
+  background-clip: text;
+  /* background: radial-gradient(229.8% 9709.88% at 47.76% -66.67%, #EB3A4A 0%, rgba(235, 58, 74, 0) 100%) warning: gradient uses a rotation that is not supported by CSS and may not behave as expected; */
+
+}
+.button.red {
+  border: 1px solid;
+
+
+
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)) padding-box,
+radial-gradient(85.42% 238.45% at 59.7% 50%, #EB3A4A 0%, rgba(235, 58, 74, 0) 100%) border-box !important; */
+
+background: linear-gradient(0deg, #080808, #080808) padding-box,
+/* linear-gradient(to left, rgba(52, 52, 52, 0.5), rgba(52, 52, 52, 0.5)) border-box, */
+radial-gradient(85.42% 238.45% at 59.7% 50%, #EB3A4A 0%, rgba(235, 58, 74, 0) 100%) border-box ;
+/* linear-gradient(93.23deg, #868686 -1.74%, rgba(0, 0, 0, 0) 78.61%) border-box; */
+  border: 2px solid transparent;
+}
+
+.scrolldown img{
+  transition: all .25s ease;
+}
+.scrolldown p{
+  transition: all .25s ease;
+}
+.scrolldown:hover p{
+  font-size: 1rem;
+}
+
+
+.scrolldown:hover img{
+  width: 30px !important;
+}
+
+.shadow-box{
+  box-shadow: inset 0px 7px 20px 6px rgba(0, 0, 0, 0.8);
+}
+
+.bubble{
+  left: random(1, 100)vw;
+  bottom: random(1, 100)vh;
+  animation: move infinite randomT(3, 15); 
+}
+
+@keyframes move {
+  0% {
+    bottom: -100px;
+  }
+
+  100% {
+    bottom: random(0, 100)vh;
+    transform: translate(random(-100, 200)px, 0);
+    opacity: 0;
+  }
 }
