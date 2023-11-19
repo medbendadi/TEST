@@ -294,7 +294,7 @@ export default function Home() {
                         <pre className={`${roboto.className} sm:text-[14px] text-[8.7px] mt-[10vh] text-[#95959D] `}>
                           {`
   `}<span className='text-white'>{`player_metadata = {`}</span>{`
-    "player _name"`}<span className='text-white'>:</span>{` "JohnDoe123"`}<span className='text-white'>{`,`}</span>{`
+    "player_name"`}<span className='text-white'>:</span>{` "JohnDoe123"`}<span className='text-white'>{`,`}</span>{`
     "gaming_platform"`}<span className='text-white'>:</span>{` "PC"`}<span className='text-white'>{`,`}</span>{`
     "game_level"`}<span className='text-white'>:</span>{` `}<span className='text-[#EB3A4A]'>25</span>{`,
     "achievements"`}<span className='text-white'>{`: [`}</span>{`"Master of the Arena", "Legendary Explorer"`}<span className='text-white'>{`],`}</span>{`
