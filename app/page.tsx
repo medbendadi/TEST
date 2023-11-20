@@ -234,7 +234,7 @@ export default function Home() {
           <p className={`${lexend.className} text-[14px] leading-[20px] text-secondary mt-[3vh] mx-auto max-w-[500px] text-center`}>The fundamental protocol that allows anyone to create gaming applications built on top of player identities.</p>
         </motion.div>
         <div className='flex items-center justify-center gap-5 mt-[6vh] flex-wrap'>
-          <motion.div initial={{ x: -250, opacity:0 }} whileInView={{ x: 0, opacity:1, transition:{duration:1} }} className='rounded-[16px] hover:scale-105 transition-all duration-[350] ease-linear bg-[#090909cc]  border-solid border border-[#343434] sm:w-[387px] w-[100%] h-[244px] px-[20px] py-[15px]'>
+          <motion.div initial={{ x: -250, opacity:0 }} whileInView={{ x: 0, opacity:1, transition:{duration:1} }} className='rounded-[16px] hover:scale-105 transition-all duration-[350] ease-linear bg-[#090909cc]  border-solid border border-[#343434] sm:min-w-[387px] min-w-[100%] min-h-[244px] px-[20px] py-[15px]'>
             <h2 className={`${lexend.className} text-[24px]`}>Gaming social layer</h2>
             <h2 className={`${lexend.className} text-[14px] leading-[20px] text-secondary mt-[1vh]`}>Gamers take control of their data.</h2>
             <Image
@@ -246,7 +246,7 @@ export default function Home() {
               objectFit='contain'
             />
           </motion.div>
-          <motion.div initial={{ x: 250, opacity:0 }} whileInView={{ x: 0, opacity:1, transition:{duration:1} }} className='rounded-[16px] hover:scale-105 transition-all duration-[350] ease-linear bg-[#090909cc] border-solid border border-[#343434] sm:w-[387px] w-[100%] h-[244px] px-[20px] py-[15px]'>
+          <motion.div initial={{ x: 250, opacity:0 }} whileInView={{ x: 0, opacity:1, transition:{duration:1} }} className='rounded-[16px] hover:scale-105 transition-all duration-[350] ease-linear bg-[#090909cc] border-solid border border-[#343434] sm:min-w-[387px] min-w-[100%] min-h-[244px] px-[20px] py-[15px]'>
             <h2 className={`${lexend.className} text-[24px]`}>Gaming social layer</h2>
             <h2 className={`${lexend.className} text-[14px] leading-[20px] text-secondary mt-[1vh]`}>Gamers take control of their data.</h2>
             <Image
