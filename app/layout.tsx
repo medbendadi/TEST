@@ -16,6 +16,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+      <title>{`X | Home`}</title>
+         <link rel="shortcut icon" href="/images/Logo.svg" />
+         <meta
+            name="description"
+            content="Mohamed bendadi is a full stack greedy web developer building websites and applications that you would like to use."
+         />
+         <meta
+            name="keywords"
+            content="Mohamed Bendadi, nitin, ranganath, web developer portfolio, bendadi web developer, bendadi developer, mern stack, Mohamed Bendadi portfolio, vscode-portfolio"
+         />
+         <meta property="og:title" content="Mohamed Bendadi's X Project" />
+         <meta
+            property="og:description"
+            content="A full-stack developer building websites that you'd like to use."
+         />
+         {/* <meta property="og:image" content="https://i.imgur.com/LxdmZQd.png" /> */}
+         <meta property="og:url" content="https://x-medbendadi.vercel.app" />
+         <meta name="twitter:card" content="summary_large_image" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
